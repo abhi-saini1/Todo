@@ -1,23 +1,21 @@
-
-interface inputProps  {
-  name: string,
-  type: string,
-  placeholder? : string,
-  value?:  string,
-  required: boolean | undefined;
+interface inputProps {
+  name: string;
+  type: string;
+  placeholder?: string;
+  value?: string;
 }
-const Input = ({name,type,placeholder,value,required,}: inputProps) => {
+const Input = ({ name, type, placeholder, value }: inputProps) => {
   return (
     <>
-      <input className="w-full p-2 border-gray-300 rounded-sm "
-      name={name}
-      type={type}
-      value={value}
-      placeholder={placeholder}
-     
+      <input
+        className="w-full p-2 border-gray-300 rounded-sm "
+        name={name}
+        type={type}
+        value={value}
+        placeholder={placeholder}
       />
     </>
-  )
-}
+  );
+};
 
-export default Input
+export default Input;
